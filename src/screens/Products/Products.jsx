@@ -53,7 +53,7 @@ const Products = ({ navigation }) => {
                     : <View>
                         <SearchBar products={data} setProducts={setProducts} />
                         <FlatList
-                            ListHeaderComponent={() => <FilterBar products={data} setProducts={setProducts} openPanel={openPanel} />}
+                            ListHeaderComponent={<FilterBar products={data} setProducts={setProducts} openPanel={openPanel} />}
                             data={products}
                             renderItem={renderItem}
                             style={{ marginBottom: 70 }}

@@ -7,7 +7,8 @@ export default StyleSheet.create({
         flex: 1
     },
     bodyContainer: {
-        padding: 10
+        padding: 10,
+        paddingBottom: 40
     },
     footerContainer: {
         flexDirection: 'row',

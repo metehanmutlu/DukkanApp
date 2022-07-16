@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, ScrollView } from 'react-native'
 import React from 'react'
 import styles from './DetailCard.style'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
@@ -33,7 +33,7 @@ const DetailCard = ({ data }) => {
     }
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Image style={styles.image} source={{ uri: data.image }} />
             <View style={styles.bodyContainer}>
                 <Text style={styles.title}>{data.title}</Text>
@@ -48,7 +48,7 @@ const DetailCard = ({ data }) => {
                     <Text style={styles.price}>{data.price} ₺</Text>
                 </View>
             </View>
-        </View>
+        </ScrollView>
     )
 }
 
