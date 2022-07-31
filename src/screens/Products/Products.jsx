@@ -59,10 +59,7 @@ const Products = ({ navigation }) => {
                             style={{ marginBottom: 70 }}
                         />
                         <SwipeablePanel {...panelProps} isActive={isPanelActive}>
-                            <Text>Mete Mutlu</Text>
-                            <Text>Mete Mutlu</Text>
-                            <Text>Mete Mutlu</Text>
-                            <Text>Mete Mutlu</Text>
+                            <Text>Hello World</Text>
                         </SwipeablePanel>
                     </View>
             }
